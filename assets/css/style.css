@@ -2,10 +2,51 @@
     box-sizing: border-box;
 }
 
+body {
+    background: url(../images/background_grey_wash_wall.png);
+    padding-bottom: 20px;
+}
+
+.jumbotron {
+    color: #fff;
+    background: url(../images/giphy-downsized.gif);
+    border-bottom: 3px solid #fff;
+}
+
+.jumbotron h1 {
+    font-family: 'Iceberg', cursive;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+.jumbotron ul {
+    background-color: rgb(82, 88, 88);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
 .panel {
     text-align: center;
 }
 
+.panel-heading {
+    background-color: #f4511e;
+    color: #fff;
+}
+
 .panel-body {
-    font-size: 30px;
+    font-size: 2em;
+    border: 3px solid #f4511e;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+button:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0,.8);
+}
+
+button {
+    background-color: thistle;
+    border: 3px solid white;
 }

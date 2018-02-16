@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>The Gem Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Iceberg" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/game1.js"></script>
 </head>
 <body>
     <div class="jumbotron">
@@ -21,6 +22,7 @@
                     <li>You win the game by matching the random number you are given at the start of the game.  You lose the game if you go over that number.</li>
                     <li>The value of each crystal is hidden until you click on it.</li>
                     <li>Each time the game starts, the value of each crystal will change.</li>
+                    <li><strong>Don't be a LOSER!</strong></li>
                 </ul>
             </div>
         </div><!--/"container"-->
@@ -28,25 +30,25 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading"><h2>Can you get me?</h2></div>
+                <div class="panel">
+                    <div class="panel-heading"><h2>Target</h2></div>
                     <div class="panel-body"><span id="targetNumber"></span></div>
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="panel panel-default">
+                <div class="panel">
                     <div class="panel-heading"><h2>Current Total</h2></div>
                     <div class="panel-body"><span id="count">0</span></div>
                 </div>
             </div>
             <div class="col-sm-2">
-                <div class="panel panel-default">
+                <div class="panel">
                     <div class="panel-heading"><h2>Wins</h2></div>
                     <div class="panel-body"><span id="wins">0</span></div>
                 </div>
             </div>
             <div class="col-sm-2">
-                <div class="panel panel-default">
+                <div class="panel">
                     <div class="panel-heading"><h2>Losses</h2></div>
                     <div class="panel-body"><span id="losses">0</span></div>
                 </div>
@@ -70,7 +72,7 @@
             </div>
             <div class="col-xs-6 col-md-3">
                 <button id="crystalGreen">
-                    <img src="assets/images/crystalGreen.jpg"></img>
+                    <img src="assets/images/crystalGreen.PNG"></img>
                 </button>
             </div>
         </div>
