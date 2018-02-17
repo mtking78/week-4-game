@@ -8,15 +8,18 @@
     <link href="https://fonts.googleapis.com/css?family=Iceberg" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <script src="assets/javascript/game1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="jumbotron">
         <div class="container">
             <h1>The Gem Game</h1>
             <div id="instructions">
-                <ul>
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Instructions</button>
+                <ul id="demo" class="collapse">
                     <li>You will be given a random number at the start of each game.</li>
                     <li>There are four crystals below.  Clicking on each crystal will add a specific amount of points to your total.</li>
                     <li>You win the game by matching the random number you are given at the start of the game.  You lose the game if you go over that number.</li>
@@ -25,52 +28,73 @@
                     <li><strong>Don't be a LOSER!</strong></li>
                 </ul>
             </div>
-        </div><!--/"container"-->
-    </div><!--/"jumbotron"-->
+       <!-- <div class="container">
+                <div class="row">
+                    <div class="panel-group col-sm-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" href="#collapse1">Instructions</a></h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse">
+                                <ul class="list-group">
+                                    <li class="list-group-item">You will be given a random number at the start of each game.</li>
+                                    <li class="list-group-item">There are four crystals below.  Clicking on each crystal will add a specific amount of points to your total.</li>
+                                    <li class="list-group-item">You win the game by matching the random number you are given at the start of the game.<br>You lose the game if you go over that number.</li>
+                                    <li class="list-group-item">The value of each crystal is hidden until you click on it.</li>
+                                    <li class="list-group-item">Each time the game starts, the value of each crystal will change.</li>
+                                </ul>
+                                <div class="panel-footer"><strong>Don't be a LOSER!</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-xs-6 col-sm-4">
                 <div class="panel">
-                    <div class="panel-heading"><h2>Target</h2></div>
+                    <div class="panel-heading"><h3>Target Number</h3></div>
                     <div class="panel-body"><span id="targetNumber"></span></div>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-xs-6 col-sm-4">
                 <div class="panel">
-                    <div class="panel-heading"><h2>Current Total</h2></div>
+                    <div class="panel-heading"><h3>Current Total</h3></div>
                     <div class="panel-body"><span id="count">0</span></div>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-xs-6 col-sm-2">
                 <div class="panel">
-                    <div class="panel-heading"><h2>Wins</h2></div>
+                    <div class="panel-heading"><h3>Wins</h3></div>
                     <div class="panel-body"><span id="wins">0</span></div>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-xs-6 col-sm-2">
                 <div class="panel">
-                    <div class="panel-heading"><h2>Losses</h2></div>
+                    <div class="panel-heading"><h3>Losses</h3></div>
                     <div class="panel-body"><span id="losses">0</span></div>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-6 col-md-3">
+            <div class="col-xs-3">
                 <button id="crystalRed">
                     <img src="assets/images/crystalRed.jpg"></img>
                 </button>
             </div>
-            <div class="col-xs-6 col-md-3">
+            <div class="col-xs-3">
                 <button id="crystalBlue">
                     <img src="assets/images/crystalBlue.jpg"></img>
                 </button>
             </div>
-            <div class="col-xs-6 col-md-3">
+            <div class="col-xs-3">
                 <button id="crystalYellow">
                     <img src="assets/images/crystalYellow.jpg"></img>
                 </button>
             </div>
-            <div class="col-xs-6 col-md-3">
+            <div class="col-xs-3">
                 <button id="crystalGreen">
                     <img src="assets/images/crystalGreen.png"></img>
                 </button>
